@@ -4,7 +4,7 @@ How to start a project like this one ;-)
 
 Prerequisites
 ```
-sudo npm install webpack-dev-server webpack -g
+sudo npm install webpack-dev-server webpack babel -g
 
 ```
 
