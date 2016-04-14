@@ -1,0 +1,45 @@
+#background {
+  /* background: linear-gradient(45deg, black, black); */
+  background: linear-gradient(96deg, rgb(56, 136, 229), rgb(77, 155, 117));
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#main {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 2px black;
+  font-family: "Helvetica Neue";
+}
+#main h1 {
+  font-weight: 100;
+  margin-top: 50px;
+}
+#main .primary {
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1em;
+}
+#main .sub {
+  font-family: courier;
+  font-size: 0.6em;
+}
+#main p {
+  margin-bottom: 20px;
+}
+#main .output {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0px auto;
+  width: 85%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
+  text-shadow: none;
+  font-family: "courier";
+  font-size: 0.8em;
+}
