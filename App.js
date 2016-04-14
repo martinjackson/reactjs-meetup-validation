@@ -1,7 +1,16 @@
 import React from 'react';
+
 class App extends React.Component {
+
+
   render(){
-    return <div>Hi</div>
+
+    var ast = {fill: 'red'}
+
+    return <div>Hi
+               <img src="Asterisk.svg" alt="asterisk" style={ast} />
+               <img src="kiwi.svg" alt="kiwi standing on a disk" />
+           </div>
   }
 }
 

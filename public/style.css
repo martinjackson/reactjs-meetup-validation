@@ -43,3 +43,32 @@
   font-family: "courier";
   font-size: 0.8em;
 }
+
+/*  https://css-tricks.com/using-svg/     article with kiwi examples */
+.asterisk {
+  fill: #94d31b;
+}
+.asterisk:hover {
+  fill: #ace63c;
+}
+
+.logo {
+  width: 200px;
+  height: 164px;
+}
+
+.kiwi {
+  fill: #94d31b;
+}
+.kiwi:hover {
+  fill: #ace63c;
+}
+
+.ground {
+  fill: #787f6a;
+}
+
+.ground:hover {
+  filter: url(#pictureFilter);
+  fill: #896d3d;
+}

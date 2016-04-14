@@ -1,0 +1,38 @@
+@import "compass/css3";
+
+.logo {
+  width: 200px;
+  height: 164px;
+}
+
+.kiwi {
+  fill: #94d31b;
+
+  // stroke: #909;
+	// stroke-width: 10;
+
+  // not sure which of these is correct
+  // stroke-linejoin: butt | round | square;
+  // stroke-linecap: butt | round | square;
+
+  // stroke-dasharray: 5, 5, 10;
+
+  // filter: url(#pictureFilter);
+  // mask: url(#f1);
+  // clip-path: url();
+}
+.kiwi:hover {
+  fill: #ace63c;
+}
+
+.ground {
+  fill: #787f6a;
+}
+.ground:hover {
+  filter: url(#pictureFilter);
+  fill: #896d3d;
+}
+
+body {
+  padding: 20px;
+}

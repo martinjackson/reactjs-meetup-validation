@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --content-base public/ | grep -v built",
-    "build": "webpack"
+    "start": "webpack-dev-server --colors --content-base public/ | grep -v built",
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
