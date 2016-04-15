@@ -2,6 +2,16 @@
   font-family: "Helvetica Neue";
 }
 
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
 #background {
   /* background: linear-gradient(45deg, black, black); */
   background: linear-gradient(96deg, rgb(58, 117, 196), rgb(77, 155, 117));
@@ -93,7 +103,7 @@ input {
     box-shadow: 0 0 2px black;
   }
 
-  input:focus {
+  input.valid:focus {
     box-shadow: 0 0 8px rgba(0, 255, 50, 0.75)
   }
 
