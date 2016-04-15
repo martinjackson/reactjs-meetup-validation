@@ -1,16 +1,13 @@
 import React from 'react';
 
+import Err from './components/Aster';
+
 class App extends React.Component {
 
 
   render(){
 
-    var ast = {fill: 'red'}
-
-    return <div>Hi
-               <img src="Asterisk.svg" alt="asterisk" style={ast} />
-               <img src="kiwi.svg" alt="kiwi standing on a disk" />
-           </div>
+    return <div>Hello<Err msg='some msg'/>Hi<Err/>There</div>
   }
 }
 
