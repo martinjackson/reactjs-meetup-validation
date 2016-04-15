@@ -104,3 +104,23 @@ input {
   input:read-only {
       background-color: darkgrey;
   }
+
+  table {
+      border-collapse: collapse;
+      margin:1em auto;
+  }
+
+  th, td {
+      font-weight: normal;
+      font-size: 14px;
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  th {
+      background-color: #4CAF50;
+      color: white;
+  }

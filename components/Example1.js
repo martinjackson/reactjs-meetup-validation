@@ -66,26 +66,37 @@ class Example1 extends React.Component {
            });
       }
 
+  table(obj) {
+    var keys = Object.keys(obj);
+
+    return      <table border="1">
+                    <thead><tr>{keys.map( k => <th key={k}>{k}</th>)}</tr></thead>
+                    <tbody><tr>{keys.map( k => <td key={k}>{obj[k]}</td>)}</tr></tbody>
+                  </table>
+  }
+
   render(){
 
     var valid = this.checkValid();
+    var cn = (name) => (valid[name]) ? 'valid':'invalid';
 
     return <div>
             <h1>Example 1</h1>
             <div>
-              From: <input name="from" className={valid['from']?'valid':'invalid'} onChange={this.handleChange} value={this.state.from} placeholder="MM/DD/YYYY" />
-              To: <input   name="to"   className={valid['to']?'valid':'invalid'}   onChange={this.handleChange} value={this.state.to}   placeholder="MM/DD/YYYY" />
-              OTB: <MbsSelectOTB name="otb"  className={valid['otb']?'valid':'invalid'}  onChange={this.handleChange} value={this.state.otb} />
-              Subject Patterns: <input name="subjects" className={valid['subjects']?'valid':'invalid'} onChange={this.handleChange} value={this.state.subjects} />
+              From: <input name="from" className={cn('from')} onChange={this.handleChange} value={this.state.from} placeholder="MM/DD/YYYY" />
+              To: <input   name="to"   className={cn('to')}   onChange={this.handleChange} value={this.state.to}   placeholder="MM/DD/YYYY" />
+              OTB: <MbsSelectOTB name="otb"  className={cn('otb')}  onChange={this.handleChange} value={this.state.otb} />
+              Subject Patterns: <input name="subjects" className={cn('subjects')} onChange={this.handleChange} value={this.state.subjects} />
               <br />
-              Cost: <input name="cost" className={valid['cost']?'valid':'invalid'} onChange={this.handleChange} value={this.state.cost} />
-              Quantity: <input name="qnt" className={valid['qnt']?'valid':'invalid'} onChange={this.handleChange} value={this.state.qnt} />
+              Cost: <input name="cost" className={cn('cost')} onChange={this.handleChange} value={this.state.cost} />
+              Quantity: <input name="qnt" className={cn('qnt')} onChange={this.handleChange} value={this.state.qnt} />
               <br />
 
               <button type="button" onClick={this.submitData}>Submit</button>
               <button type="button" onClick={this.clear}>Clear</button>
               <button type="button" onClick={this.cannedReport}>Daily Report</button>
               <hr />
+              {this.table(this.state)}
               </div>
 
            </div>
