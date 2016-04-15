@@ -1,3 +1,7 @@
+* {
+  font-family: "Helvetica Neue";
+}
+
 #background {
   /* background: linear-gradient(45deg, black, black); */
   background: linear-gradient(96deg, rgb(58, 117, 196), rgb(77, 155, 117));
@@ -14,8 +18,8 @@
   text-align: center;
   color: white;
   text-shadow: 0 1px 2px black;
-  font-family: "Helvetica Neue";
 }
+
 #main h1 {
   font-weight: 100;
   margin-top: 50px;
@@ -44,31 +48,59 @@
   font-size: 0.8em;
 }
 
-/*  https://css-tricks.com/using-svg/     article with kiwi examples */
-.asterisk {
-  fill: #94d31b;
-}
-.asterisk:hover {
-  fill: #ace63c;
-}
 
-.logo {
-  width: 200px;
-  height: 164px;
-}
 
-.kiwi {
-  fill: #94d31b;
-}
-.kiwi:hover {
-  fill: #ace63c;
-}
 
-.ground {
-  fill: #787f6a;
-}
+button {
+    text-transform: uppercase;
+    color: #e7e5e5;
+    font-weight: bold;
+    color: #e7e5e5;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5em 2em;
+    margin: 1em;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+    transition: all 100ms;
+    text-decoration: none;
+  }
 
-.ground:hover {
-  filter: url(#pictureFilter);
-  fill: #896d3d;
-}
+  .active {
+      background: lightgrey;
+      color: black;
+  }
+
+
+button:hover {
+    background: white;
+    color: #444;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.20);
+  }
+
+/*
+    used by components/Input.js
+*/
+input {
+    border-radius: 0.6em;
+    padding: 0.2em 0.5em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px black;
+  }
+
+  input:focus {
+    box-shadow: 0 0 8px rgba(0, 255, 50, 0.75)
+  }
+
+  input.invalid, input.invalid:focus {
+    box-shadow: 0 0 9px rgba(255, 25, 25, 0.75)
+  }
+
+  input:read-only {
+      background-color: darkgrey;
+  }

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import _ from 'lodash';
-
 class Aster extends React.Component {
 
   constructor(props) {
