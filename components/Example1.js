@@ -31,7 +31,7 @@ class Example1 extends React.Component {
       var valid = {};
       valid.from     = dPat.test(this.state.from);
       valid.to       = dPat.test(this.state.to);
-      valid.otb      = true;
+      valid.otb      = this.state.otb != 'CPR';
       valid.subjects =  /^[A-Z0-9]*$/.test(this.state.subjects);
       valid.cost     = fPat.test(this.state.cost);
       valid.qnt      = iPat.test(this.state.qnt);

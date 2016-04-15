@@ -12,7 +12,7 @@ import Example5 from './components/Example5';
 class App extends React.Component {
 
   render(){
-    return <Example1 />
+    return <Example5 />
   }
 }
 
