@@ -83,14 +83,12 @@ class Example1 extends React.Component {
     return <div>
             <h1>Example 1</h1>
             <div>
-              From: <input name="from" className={cn('from')} onChange={this.handleChange} value={this.state.from} placeholder="MM/DD/YYYY" />
-              To: <input   name="to"   className={cn('to')}   onChange={this.handleChange} value={this.state.to}   placeholder="MM/DD/YYYY" />
-              OTB: <MbsSelectOTB name="otb"  className={cn('otb')}  onChange={this.handleChange} value={this.state.otb} />
-              Subject Patterns: <input name="subjects" className={cn('subjects')} onChange={this.handleChange} value={this.state.subjects} />
-              <br />
-              Cost: <input name="cost" className={cn('cost')} onChange={this.handleChange} value={this.state.cost} />
-              Quantity: <input name="qnt" className={cn('qnt')} onChange={this.handleChange} value={this.state.qnt} />
-              <br />
+              From: <input       name="from"     className={cn('from')}     onChange={this.handleChange} value={this.state.from} placeholder="MM/DD/YYYY" />
+              To: <input         name="to"       className={cn('to')}       onChange={this.handleChange} value={this.state.to}   placeholder="MM/DD/YYYY" />
+              OTB: <MbsSelectOTB name="otb"      className={cn('otb')}      onChange={this.handleChange} value={this.state.otb} />                       <br />
+              Subjects: <input   name="subjects" className={cn('subjects')} onChange={this.handleChange} value={this.state.subjects} />                  <br />
+              Cost: <input       name="cost"     className={cn('cost')}     onChange={this.handleChange} value={this.state.cost} />
+              Quantity: <input   name="qnt"      className={cn('qnt')}      onChange={this.handleChange} value={this.state.qnt} />                       <br />
 
               <button type="button" onClick={this.submitData}>Submit</button>
               <button type="button" onClick={this.clear}>Clear</button>
