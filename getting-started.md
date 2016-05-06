@@ -12,6 +12,11 @@ sudo npm install webpack-dev-server webpack babel -g
 ```
 cd ~/projects/[your-project-name-here]
 npm init
+(answer the questions)
+```
+
+setup the Developerment Tools for this project
+```
 npm install babel-loader babel-core babel-preset-es2015 babel-preset-react webpack --save-dev
 ```
 
